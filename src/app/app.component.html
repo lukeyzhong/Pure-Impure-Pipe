@@ -3,5 +3,5 @@
 <button (click)="changeReference()">change by Reference</button>
 <hr>
 <ul>
-	<li *ngFor="let user of users | filter:searchTerm">{{user.name}}</li>
+	<li *ngFor="let user of users | filterpipe:searchTerm">{{user.name}}</li>
 </ul>

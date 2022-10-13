@@ -8,7 +8,7 @@ import { User } from './User';
 })
 export class AppComponent {
   users: User[] = [
-    { name: "ahmed", age: 20 },
+    { name: "abc", age: 20 },
     { name: "hamza", age: 20 },
     { name: "manel", age: 20 },
     { name: "yosra", age: 20 },
@@ -19,15 +19,15 @@ export class AppComponent {
   searchTerm = ''
 
   changeProperty() {
-    this.users[0].name = "ghoul";
+    this.users[0].name = "efg";
   }
 
   changeReference() {
     // const refUsers= Object.assign([], this.users);
     // const refUsers= [...this.users];
     const refUsers = this.users.slice();
-    refUsers[0].name = "ghoul";
+    refUsers[0].name = "efg";
     this.users = refUsers
-    console.log(this.users)
+    // console.log(this.users)
   }
 }

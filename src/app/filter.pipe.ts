@@ -3,8 +3,9 @@ import { User } from './User';
 
 // Pipe
 @Pipe({
-  name: 'filter',
-  pure: true
+  name: 'filterpipe',
+  // pure: true,
+  pure: false
 })
 export class FilterPipe implements PipeTransform {
   transform(users: User[], searchTerm: string): User[] {
