@@ -16,7 +16,7 @@ export class AppComponent {
     { name: "raja", age: 20 }
   ]
 
-  searchTerm = ''
+  searchTerm = '';
 
   changeProperty() {
     this.users[0].name = "efg";
@@ -27,7 +27,7 @@ export class AppComponent {
     // const refUsers= [...this.users];
     const refUsers = this.users.slice();
     refUsers[0].name = "efg";
-    this.users = refUsers
+    this.users = refUsers;
     // console.log(this.users)
   }
 }
