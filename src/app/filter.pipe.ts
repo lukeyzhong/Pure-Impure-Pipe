@@ -5,7 +5,7 @@ import { User } from './User';
 @Pipe({
   name: 'filterpipe',
   // pure: true,
-  pure: false,
+  pure: true,
 })
 
 

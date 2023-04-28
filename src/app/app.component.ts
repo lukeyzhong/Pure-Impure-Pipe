@@ -19,7 +19,7 @@ export class AppComponent {
   searchTerm = '';
 
   changeProperty() {
-    this.users[0].name = "efg";
+    this.users[0].name = "efg-this is changed";
   }
 
   changeReference() {
